@@ -31,8 +31,8 @@ ala.place(x=110,y=10)
 def send_otp(email):
     server = smtplib.SMTP('smtp.gmail.com')
     server.starttls()
-    email_address = 'kiruthikav20443.cs@gmail.com'             
-    email_password = 'lepo izfx wxcy jmnx'                     
+    email_address = 'yourmail@gmail.com'       #Type your Gmail account      
+    email_password = 'yourpassword'            #Type your Gmail Password
     server.login(email_address, email_password)
     otp = ''.join([str(random.randint(0, 9)) for i in range(6)]) 
     message = f'Your OTP is {otp}'
